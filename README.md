@@ -23,7 +23,7 @@ npm i iframewidget
 - Use below tag to create a widegt get in your page
 - use below in those pages in which you want a widget bot.
 
-- GET  YOUR TelechatbotId at [@telewidget_bot](t.me/telewidget_bot)
+- GET  YOUR TelechatbotId at [@telewidget_bot]([t.me/telewidget_bot](https://t.me/telewidget_bot))
 
 ```
  <Widget TelechatbotId="1379160926" config={options}/>
