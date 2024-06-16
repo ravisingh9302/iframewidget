@@ -20,15 +20,22 @@ const defaultConfig = {
   chatIconbgColor: "#121D9E",
   chatIconcolor: '#ffffff',
 
-  title: 'Let\'s chat!',
+  title: 'Customer Support',
   introMessage: 'Hello! How can we help you?',
   visitorPronoun: 'You',
-  chatareabgcolor: "#E2E8F0",
+  chatareabgcolor: "#000000",
   titlecolor: "#ffffff",
   titlebgcolor: "#121D9E",
   placeholderText: 'Type your message...',
-  autoResponse: 'Looking for the available customer executive.',
+  inputBgcolor: "#121D9E",
+  inputTxtcolor: "#ffffff",
+  displayMessageTime: true,
+  chatTextboxcolor: "#ffffff",
+  chatTextcolor: "#000000",
+  chatTimecolor: "#B0B0B0",
+  
 }
+// autoResponse: 'Looking for the available customer executive.',
 
 export const Widget = ({ TelechatbotId, config, webserver }) => {
   const [isOpen, setOpen] = useState(false)
@@ -39,7 +46,7 @@ export const Widget = ({ TelechatbotId, config, webserver }) => {
   }, []);
   let configure = { ...defaultConfig, ...config }
   let iFrameSrc = "https://telechatbot-client.vercel.app"
-  let info = { title: configure.title, introMessage: configure.introMessage, visitorPronoun: configure.visitorPronoun, chatareabgcolor: configure.chatareabgcolor, titlebgcolor: configure.titlebgcolor, titlecolor: configure.titlecolor, placeholderText: configure.placeholderText, autoResponse: configure.autoResponse }
+  let info = { title: configure.title, introMessage: configure.introMessage, visitorPronoun: configure.visitorPronoun, chatareabgcolor: configure.chatareabgcolor, titlebgcolor: configure.titlebgcolor, titlecolor: configure.titlecolor, placeholderText: configure.placeholderText,inputBgcolor:configure.inputBgcolor,inputTxtcolor:configure.inputTxtcolor,displayMessageTime:configure.displayMessageTime,chatTextboxcolor:configure.chatTextboxcolor,chatTextcolor:configure.chatTextcolor,chatTimecolor:configure.chatTimecolor,  }
   let source = iFrameSrc + '?id=' + TelechatbotId + '&host=' + host + '&config=' + encodeURIComponent(JSON.stringify(info));
 
   return (
