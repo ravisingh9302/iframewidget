@@ -1,8 +1,15 @@
 # Widget npm package
 
 - This is iFrame widget package to create widget of custum size and property.
+- Get you webSite bot Reponse in your Telegram and Answer Them.
 
-<img src="https://github.com/ravisingh9302/iframewidget/blob/main/img/Screenshot1.png" alt="" height="250px"> <img src="https://github.com/ravisingh9302/iframewidget/blob/main/img/Screenshot2.png" alt="" height="250px">
+
+<img src="https://github.com/ravisingh9302/assets/blob/main/img/Screenshot1.png" alt="screenshot" height="200px"> <img src="https://github.com/ravisingh9302/assets/blob/main/img/Screenshot2.png" alt="screenshot" height="200px">
+
+
+## Follow my another Repositry [Widget CDN repo](https://github.com/ravisingh9302/widget) to use this Widget as through CDN link.
+
+
 
 
 ## Follow step to use this in your your next or react app.
@@ -13,7 +20,6 @@
 npm i iframewidget
 
 ```
-
 - Import it in your page.
 
 ```

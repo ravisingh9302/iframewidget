@@ -1,7 +1,7 @@
 {
   "name": "iframewidget",
-  "version": "1.0.0",
-  "description": "A npm widget package to create a widget in react and nextjs app.",
+  "version": "1.1.1",
+  "description": "A npm widget package to create a widget in react and nextjs app. \n By using this package you implement a Telegram connected chat bot and you create your own bot and show in widget.",
   "main": "index.js",
   "type": "module",
   "scripts": {},
@@ -10,7 +10,7 @@
     "url": "https://github.com/ravisingh9302/iframewidget.git"
   },
   "keywords": [
-    "widget"
+    "widget","iframewidget","widgets","telechatbot", "Telegrambot","bot", "support bot","fronted","react","nextjs"
   ],
   "author": "Ravi shankar singh",
   "license": "MIT",
