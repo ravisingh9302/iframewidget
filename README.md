@@ -1,8 +1,8 @@
 # Widget npm package
 
 - This is iFrame widget package to create widget of custum size and property.
-<p ><img src="https://github.com/ravisingh9302/iframewidget/blob/main/img/screenshot1.png" alt="" height="250px"></p>
-<p ><img src="https://github.com/ravisingh9302/iframewidget/blob/main/img/screenshot2.png" alt="" height="250px"></p>
+<img src="https://github.com/ravisingh9302/iframewidget/blob/main/img/Screenshot1.png" alt="" height="250px">
+<img src="https://github.com/ravisingh9302/iframewidget/blob/main/img/Screenshot2.png" alt="" height="250px">
 
 ## Follow step to use this in your your next or react app.
 
@@ -23,7 +23,7 @@ npm i iframewidget
 - Use below tag to create a widegt get in your page
 - use below in those pages in which you want a widget bot.
 
-- GET  YOUR TelechatbotId at [@telewidget_bot]([t.me/telewidget_bot](https://t.me/telewidget_bot))
+- GET  YOUR TelechatbotId at [@telewidget_bot](https://t.me/telewidget_bot))
 
 ```
  <Widget TelechatbotId="1379160926" config={options}/>
