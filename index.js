@@ -1,5 +1,5 @@
 "use client"
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { RxCrossCircled } from "react-icons/rx";
@@ -30,11 +30,15 @@ const defaultConfig = {
   autoResponse: 'Looking for the available customer executive.',
 }
 
-export const Widget = ({ TelechatbotId, config,webserver }) => {
+export const Widget = ({ TelechatbotId, config, webserver }) => {
   const [isOpen, setOpen] = useState(false)
+  const [host, sethost] = useState(null)
+  useEffect(() => {
+    sethost(window.location.host)
+    return () => { }
+  }, []);
   let configure = { ...defaultConfig, ...config }
-  let host = window.location.host
-  let iFrameSrc =webserver?webserver:"https://telechatbot-client.vercel.app"
+  let iFrameSrc = "https://telechatbot-client.vercel.app"
   let info = { title: configure.title, introMessage: configure.introMessage, visitorPronoun: configure.visitorPronoun, chatareabgcolor: configure.chatareabgcolor, titlebgcolor: configure.titlebgcolor, titlecolor: configure.titlecolor, placeholderText: configure.placeholderText, autoResponse: configure.autoResponse }
   let source = iFrameSrc + '?id=' + TelechatbotId + '&host=' + host + '&config=' + encodeURIComponent(JSON.stringify(info));
 
@@ -45,7 +49,7 @@ export const Widget = ({ TelechatbotId, config,webserver }) => {
           <div onClick={() => { setOpen(false) }} style={{ position: 'absolute', right: "5px", top: "5px", fontSize: "30px", cursor: 'pointer', color: configure.Closebtncolor }}>
             <RxCrossCircled />
           </div>
-          <iframe src={source}
+          <iframe src={webserver ? webserver : source}
             width='100%'
             height='100%'
             frameBorder='0' style={{ overflow: "hidden" }} >
