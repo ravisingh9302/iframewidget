@@ -52,7 +52,7 @@ export const Widget = ({ TelechatbotId, config, webserver }) => {
   return (
     <>
       {isOpen ?
-        <div style={{ width: configure.width ? configure.width : "360px", height: configure.Height ? configure.Height : "480px", position: 'fixed', right: '10px', bottom: "10px", overflow: "hidden", borderRadius: '10px' }}>
+        <div style={{ width: configure.width ? configure.width : "360px", height: configure.Height ? configure.Height : "480px", position: 'fixed', right: '10px', bottom: "10px", overflow: "hidden", borderRadius: '10px' ,zIndex:'10000'}}>
           <div onClick={() => { setOpen(false) }} style={{ position: 'absolute', right: "5px", top: "5px", fontSize: "30px", cursor: 'pointer', color: configure.Closebtncolor }}>
             <RxCrossCircled />
           </div>
@@ -61,7 +61,7 @@ export const Widget = ({ TelechatbotId, config, webserver }) => {
             height='100%'
             frameBorder='0' style={{ overflow: "hidden" }} >
           </iframe>
-        </div> : <div onClick={() => { setOpen(true) }} id='pingeffect' style={{ position: "fixed", right: configure.chatIconRight, bottom: configure.chatIconBottom, cursor: 'pointer', width: '40px', height: '40px', borderRadius: '50%', backgroundColor: configure.chatIconbgColor, display: 'flex', justifyItems: "center", justifyContent: "center", boxSizing: "border-box" }}>
+        </div> : <div onClick={() => { setOpen(true) }} id='pingeffect' style={{ position: "fixed", right: configure.chatIconRight, bottom: configure.chatIconBottom, cursor: 'pointer', width: '40px', height: '40px', borderRadius: '50%', backgroundColor: configure.chatIconbgColor, display: 'flex', justifyItems: "center", justifyContent: "center", boxSizing: "border-box",zIndex:"10000" }}>
           <div style={{ padding: "5px" }}>
             <VscRobot style={{ color: configure.chatIconcolor, width: '100%', height: '100%' }} />
           </div>
