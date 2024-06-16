@@ -1,0 +1,22 @@
+{
+  "name": "iframewidget",
+  "version": "1.0.0",
+  "description": "A npm widget package to create a widget in react and nextjs app.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ravisingh9302/iframewidget.git"
+  },
+  "keywords": [
+    "widget"
+  ],
+  "author": "Ravi shankar singh",
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-icons": "^5.2.1"
+  }
+}
